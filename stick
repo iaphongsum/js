@@ -1,0 +1,27 @@
+<!-- sticky js -->
+<script>
+
+  if (window.innerWidth &gt; 900) {
+
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+  // When the event DOMContentLoaded occurs, it is safe to access the DOM
+
+  // When the user scrolls the page, execute myFunction 
+window.addEventListener(&#39;scroll&#39;, myFunction);
+
+var navbar = document.getElementById(&quot;AdSense1&quot;);
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset &gt;= sticky) {
+    navbar.classList.add(&quot;sticky&quot;)
+  } else {
+    navbar.classList.remove(&quot;sticky&quot;);
+  }
+}
+
+})
+
+  }
+
+</script>
